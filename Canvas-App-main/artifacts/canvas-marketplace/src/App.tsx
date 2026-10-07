@@ -662,6 +662,7 @@ const { data: profiles, error: profileError } = await supabase
     />
   </div>
 </h1>
+////////////////////////////////////////
             </div>
 
             <p className={`${theme.bodyText} !font-normal !text-[#3B1E54]/75 max-w-[460px] mb-3`}>upload the look that inspires you - a screenshot, a saved post, anything - and our AI reads the style, mood, and technique to find artists whose work genuinely matches.</p>
