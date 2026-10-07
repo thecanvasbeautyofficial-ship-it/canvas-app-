@@ -653,10 +653,14 @@ const { data: profiles, error: profileError } = await supabase
     Premium
   </span>
   
-  {/* 2. "Beauty Match." - Uses DM Serif Display to maintain the heavy luxury feel WITHOUT the top line */}
-  <span className="font-['DM_Serif_Display',serif] text-[3.5rem] sm:text-[5rem] md:text-[6.5rem] tracking-tight leading-[1.1] z-0 text-[#3B1E54] -mt-3 md:-mt-5">
-    Beauty Match.
-  </span>
+{/* 3. "Beauty Match." - Replaced the coded text with her exact image */}
+  <div className="w-[85%] sm:w-[75%] md:w-[65%] mt-2 md:mt-4 flex justify-center z-0">
+    <img 
+      src="/beauty-match-text.jpg" 
+      alt="Beauty Match" 
+      className="w-full h-auto object-contain"
+    />
+  </div>
 </h1>
             </div>
 
