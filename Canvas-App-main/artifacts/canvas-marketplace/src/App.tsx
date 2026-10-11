@@ -654,7 +654,7 @@ const { data: profiles, error: profileError } = await supabase
   </span>
   
 {/* 3. "Beauty Match." - Replaced the coded text with her exact image */}
-  <div className="w-full mt-2 md:mt-4 flex justify-start z-0">
+  <div className="w-full mt-0 md:-mt-2 ml-6 md:ml-12 flex justify-start z-0">
   <img
     src="/beauty-match-text.svg"
     alt="Beauty Match"
