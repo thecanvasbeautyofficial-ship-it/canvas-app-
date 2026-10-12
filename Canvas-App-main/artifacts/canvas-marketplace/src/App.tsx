@@ -644,28 +644,28 @@ const { data: profiles, error: profileError } = await supabase
               </div>
 
               <h1 className="flex flex-col items-start text-black select-none mb-6 w-full">
-  {/* 1. "India's" - Locked in with the exact font she explicitly asked to keep */}
-  {/* 1. "India's" - Replaced with image to match exact color and scale */}
-<div className="flex justify-start z-0 overflow-visible -ml-1 md:-ml-5 mb-4 md:-mb-[10px]">
-  <img
-    src="/indias-text.svg"
-    alt="India's"
-    className="w-[200px] md:w-[400px] max-w-full md:max-w-none h-auto object-contain object-left"
-  />
-</div>
+  {/* 1. "India's" - Scaled up mobile width */}
+  <div className="flex justify-start z-0 overflow-visible -ml-1 md:-ml-5 mb-0 md:-mb-[10px]">
+    <img
+      src="/indias-text.svg"
+      alt="India's"
+      className="w-[260px] md:w-[400px] max-w-full md:max-w-none h-auto object-contain object-left"
+    />
+  </div>
   
-  <span className="font-['PinyonScript',cursive] bg-gradient-to-r from-[#7A5C24] via-[#E2BE68] to-[#7A5C24] text-transparent bg-clip-text inline-block text-[4.5rem] sm:text-[7rem] md:text-[8.5rem] leading-[1.1] py-2 md:py-4 relative z-10 drop-shadow-sm pr-4">
+  {/* 2. Premium - Shrunk mobile size down to 3rem */}
+  <span className="font-['PinyonScript',cursive] bg-gradient-to-r from-[#7A5C24] via-[#E2BE68] to-[#7A5C24] text-transparent bg-clip-text inline-block text-[3rem] sm:text-[7rem] md:text-[8.5rem] leading-[1.1] py-1 md:py-4 relative z-10 drop-shadow-sm pr-4">
     Premium
   </span>
   
-{/* 3. "Beauty Match." - Replaced the coded text with her exact image */}
-  <div className="-mt-6 md:-mt-[36px] flex justify-start z-0 overflow-visible -ml-1 md:-ml-5">
-  <img
-    src="/beauty-match-text.svg"
-    alt="Beauty Match"
-    className="w-[310px] md:w-[600px] max-w-full md:max-w-none h-auto object-contain object-left"
-  />
-</div>
+  {/* 3. "Beauty Match." - Scaled up mobile width */}
+  <div className="-mt-4 md:-mt-[36px] flex justify-start z-0 overflow-visible -ml-1 md:-ml-5">
+    <img
+      src="/beauty-match-text.svg"
+      alt="Beauty Match"
+      className="w-[350px] md:w-[600px] max-w-full md:max-w-none h-auto object-contain object-left"
+    />
+  </div>
 </h1>
             </div>
 
