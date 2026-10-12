@@ -646,12 +646,11 @@ const { data: profiles, error: profileError } = await supabase
               <h1 className="flex flex-col items-start text-black select-none mb-6 w-full">
   {/* 1. "India's" - Locked in with the exact font she explicitly asked to keep */}
   {/* 1. "India's" - Replaced with image to match exact color and scale */}
-{/* 1. "India's" - Replaced with image and scaled up to match Premium */}
-<div className="flex justify-start z-0 overflow-visible -ml-2 md:-ml-5 mb-2 md:-mb-[10px]">
+<div className="flex justify-start z-0 overflow-visible -ml-1 md:-ml-5 mb-1 md:-mb-[10px]">
   <img
     src="/indias-text.svg"
     alt="India's"
-    className="w-[300px] md:w-[400px] max-w-none h-auto object-contain object-left"
+    className="w-[200px] md:w-[400px] max-w-full md:max-w-none h-auto object-contain object-left"
   />
 </div>
   
@@ -660,11 +659,11 @@ const { data: profiles, error: profileError } = await supabase
   </span>
   
 {/* 3. "Beauty Match." - Replaced the coded text with her exact image */}
-  <div className="-mt-4 md:-mt-[36px] flex justify-start z-0 overflow-visible -ml-2 md:-ml-5">
+  <div className="-mt-1 md:-mt-[36px] flex justify-start z-0 overflow-visible -ml-1 md:-ml-5">
   <img
     src="/beauty-match-text.svg"
     alt="Beauty Match"
-    className="w-[550px] md:w-[600px] max-w-none h-auto object-contain object-left"
+    className="w-[280px] md:w-[600px] max-w-full md:max-w-none h-auto object-contain object-left"
   />
 </div>
 </h1>
