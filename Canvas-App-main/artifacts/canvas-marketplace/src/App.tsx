@@ -651,7 +651,7 @@ const { data: profiles, error: profileError } = await supabase
   <img
     src="/indias-text.svg"
     alt="India's"
-    className="w-[550px] md:w-[750px] max-w-none h-auto object-contain object-left"
+    className="w-[300px] md:w-[400px] max-w-none h-auto object-contain object-left"
   />
 </div>
   
@@ -664,7 +664,7 @@ const { data: profiles, error: profileError } = await supabase
   <img
     src="/beauty-match-text.svg"
     alt="Beauty Match"
-    className="w-[700px] md:w-[900px] max-w-none h-auto object-contain object-left"
+    className="w-[550px] md:w-[600px] max-w-none h-auto object-contain object-left"
   />
 </div>
 </h1>
