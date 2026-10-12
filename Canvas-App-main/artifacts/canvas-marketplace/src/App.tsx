@@ -645,9 +645,15 @@ const { data: profiles, error: profileError } = await supabase
 
               <h1 className="flex flex-col items-start text-black select-none mb-6 w-full">
   {/* 1. "India's" - Locked in with the exact font she explicitly asked to keep */}
-  <span className="font-india font-normal text-[3.5rem] sm:text-[5.5rem] md:text-[7.5rem] tracking-[0.02em] leading-[1] text-[#3B1E54] -mb-2 md:-mb-6">
-    India's
-  </span>
+  {/* 1. "India's" - Replaced with image to match exact color and scale */}
+{/* 1. "India's" - Replaced with image and scaled up to match Premium */}
+<div className="flex justify-start z-0 overflow-visible -ml-2 md:-ml-5 mb-2 md:-mb-[10px]">
+  <img
+    src="/indias-text.svg"
+    alt="India's"
+    className="w-[550px] md:w-[750px] max-w-none h-auto object-contain object-left"
+  />
+</div>
   
   <span className="font-['PinyonScript',cursive] bg-gradient-to-r from-[#7A5C24] via-[#E2BE68] to-[#7A5C24] text-transparent bg-clip-text inline-block text-[4.5rem] sm:text-[7rem] md:text-[8.5rem] leading-[1.1] py-2 md:py-4 relative z-10 drop-shadow-sm pr-4">
     Premium
@@ -658,7 +664,7 @@ const { data: profiles, error: profileError } = await supabase
   <img
     src="/beauty-match-text.svg"
     alt="Beauty Match"
-    className="w-[550px] md:w-[600px] max-w-none h-auto object-contain object-left"
+    className="w-[700px] md:w-[900px] max-w-none h-auto object-contain object-left"
   />
 </div>
 </h1>
