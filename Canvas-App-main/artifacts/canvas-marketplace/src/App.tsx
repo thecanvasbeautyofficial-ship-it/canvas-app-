@@ -644,26 +644,26 @@ const { data: profiles, error: profileError } = await supabase
               </div>
 
               <h1 className="flex flex-col items-start text-black select-none mb-6 w-full">
-  {/* 1. "India's" - Scaled up mobile width */}
-  <div className="flex justify-start z-0 overflow-visible -ml-1 md:-ml-5 mb-0 md:-mb-[10px]">
+  {/* 1. "India's" - Reduced width to match Beauty Match, added negative bottom margin */}
+  <div className="flex justify-start z-0 overflow-visible -ml-1 md:-ml-5 -mb-2 md:-mb-[10px]">
     <img
       src="/indias-text.svg"
       alt="India's"
-      className="w-[260px] md:w-[400px] max-w-full md:max-w-none h-auto object-contain object-left"
+      className="w-[220px] md:w-[400px] max-w-full md:max-w-none h-auto object-contain object-left"
     />
   </div>
   
-  {/* 2. Premium - Shrunk mobile size down to 3rem */}
-  <span className="font-['PinyonScript',cursive] bg-gradient-to-r from-[#7A5C24] via-[#E2BE68] to-[#7A5C24] text-transparent bg-clip-text inline-block text-[3rem] sm:text-[7rem] md:text-[8.5rem] leading-[1.1] py-1 md:py-4 relative z-10 drop-shadow-sm pr-4">
+  {/* 2. Premium - Slightly increased mobile size so it isn't too tiny */}
+  <span className="font-['PinyonScript',cursive] bg-gradient-to-r from-[#7A5C24] via-[#E2BE68] to-[#7A5C24] text-transparent bg-clip-text inline-block text-[3.5rem] sm:text-[7rem] md:text-[8.5rem] leading-[1.1] py-1 md:py-4 relative z-10 drop-shadow-sm pr-4">
     Premium
   </span>
   
-  {/* 3. "Beauty Match." - Scaled up mobile width */}
-  <div className="-mt-4 md:-mt-[36px] flex justify-start z-0 overflow-visible -ml-1 md:-ml-5">
+  {/* 3. "Beauty Match." - Scaled to match India's height, strong negative top pull */}
+  <div className="-mt-[20px] md:-mt-[36px] flex justify-start z-0 overflow-visible -ml-1 md:-ml-5">
     <img
       src="/beauty-match-text.svg"
       alt="Beauty Match"
-      className="w-[350px] md:w-[600px] max-w-full md:max-w-none h-auto object-contain object-left"
+      className="w-[320px] md:w-[600px] max-w-full md:max-w-none h-auto object-contain object-left"
     />
   </div>
 </h1>
