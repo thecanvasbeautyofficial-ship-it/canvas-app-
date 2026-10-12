@@ -646,7 +646,7 @@ const { data: profiles, error: profileError } = await supabase
               <h1 className="flex flex-col items-start text-black select-none mb-6 w-full">
   {/* 1. "India's" - Locked in with the exact font she explicitly asked to keep */}
   {/* 1. "India's" - Replaced with image to match exact color and scale */}
-<div className="flex justify-start z-0 overflow-visible -ml-1 md:-ml-5 mb-1 md:-mb-[10px]">
+<div className="flex justify-start z-0 overflow-visible -ml-1 md:-ml-5 mb-4 md:-mb-[10px]">
   <img
     src="/indias-text.svg"
     alt="India's"
