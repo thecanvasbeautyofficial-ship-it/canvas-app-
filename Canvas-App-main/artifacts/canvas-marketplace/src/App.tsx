@@ -644,8 +644,8 @@ const { data: profiles, error: profileError } = await supabase
               </div>
 
               <h1 className="flex flex-col items-start text-black select-none mb-6 w-full">
-  {/* 1. "India's" - Increased bottom margin (mb-5) to stop it from crashing into Premium */}
-  <div className="flex justify-start z-0 overflow-visible -ml-1 md:-ml-5 mb-5 md:-mb-[10px]">
+  {/* 1. "India's" - Reduced mb-5 to mb-1 to pull it closer to Premium */}
+  <div className="flex justify-start z-0 overflow-visible -ml-1 md:-ml-5 mb-1 md:-mb-[10px]">
     <img
       src="/indias-text.svg"
       alt="India's"
@@ -653,13 +653,13 @@ const { data: profiles, error: profileError } = await supabase
     />
   </div>
   
-  {/* 2. Premium - Size is locked in perfectly */}
+  {/* 2. Premium */}
   <span className="font-['PinyonScript',cursive] bg-gradient-to-r from-[#7A5C24] via-[#E2BE68] to-[#7A5C24] text-transparent bg-clip-text inline-block text-[3.5rem] sm:text-[7rem] md:text-[8.5rem] leading-[1.1] py-1 md:py-4 relative z-10 drop-shadow-sm pr-4">
     Premium
   </span>
   
-  {/* 3. "Beauty Match." - Increased negative top pull (-mt-[32px]) to close the gap */}
-  <div className="-mt-[32px] md:-mt-[36px] flex justify-start z-0 overflow-visible -ml-1 md:-ml-5">
+  {/* 3. "Beauty Match." - Relaxed from -mt-[32px] to -mt-[12px] to stop the crash */}
+  <div className="-mt-[12px] md:-mt-[36px] flex justify-start z-0 overflow-visible -ml-1 md:-ml-5">
     <img
       src="/beauty-match-text.svg"
       alt="Beauty Match"
